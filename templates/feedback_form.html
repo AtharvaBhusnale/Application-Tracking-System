@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Submit Interview Feedback</title>
+    <style>
+        body { font-family: sans-serif; margin: 2em; }
+        form { max-width: 500px; }
+        textarea, select, button { display: block; width: 100%; margin-bottom: 10px; padding: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Submit Interview Feedback</h1>
+    <form action="{{ url_for('submit_feedback', interview_id=interview_id) }}" method="post">
+        <label for="comments">Interviewer Comments:</label>
+        <textarea id="comments" name="comments" rows="8" required></textarea>
+        
+        <label for="result">Interview Result:</label>
+        <select id="result" name="result">
+            <option value="Cleared">Cleared</option>
+            <option value="Not Cleared">Not Cleared</option>
+        </select>
+        
+        <button type="submit">Submit Feedback</button>
+    </form>
+</body>
+</html>

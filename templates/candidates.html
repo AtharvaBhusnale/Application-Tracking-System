@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Candidates List</title>
+    <style>
+        body { font-family: sans-serif; margin: 2em; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: left; vertical-align: top; }
+        th { background-color: #f2f2f2; }
+        .actions-form { display: inline-block; }
+        .actions-link { text-decoration: none; background-color: #28a745; color: white; padding: 5px 10px; border-radius: 4px; font-size: 14px; margin-left: 10px; display: inline-block; margin-top: 5px; }
+        .feedback-link { background-color: #ffc107; color: black; }
+    </style>
+</head>
+<body>
+     <h1>Candidate Database</h1>
+    <h2>Upload Test Results</h2>
+    <form action="{{ url_for('upload_results') }}" method="post" enctype="multipart/form-data">
+        <input type="file" name="results_file" accept=".csv" required>
+        <button type="submit">Upload Results</button>
+    </form>
+    <hr>
+    <h1>Candidate Database</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Experience (Yrs)</th>
+                <th>Skills</th>
+                <th>Actions</th> </tr>
+        </thead>
+        <tbody>
+            {% for candidate in candidates %}
+            <tr>
+                <td>{{ candidate['id'] }}</td>
+                <td>{{ candidate['name'] }}</td>
+                <td>{{ candidate['email'] }}</td>
+                <td>{{ candidate['total_experience_years'] }}</td>
+                <td>{{ candidate['skills'] }}</td>
+                <td>
+                    <div class="actions-form">
+                        <form action="{{ url_for('update_status', candidate_id=candidate['id']) }}" method="post">
+                            <select name="status">
+                                <option value="Applied" {% if candidate['status'] == 'Applied' %}selected{% endif %}>Applied</option>
+                                <option value="Shortlisted" {% if candidate['status'] == 'Shortlisted' %}selected{% endif %}>Shortlisted</option>
+                                <option value="Test Cleared" {% if candidate['status'] == 'Test Cleared' %}selected{% endif %}>Test Cleared</option>
+                                <option value="Test Failed" {% if candidate['status'] == 'Test Failed' %}selected{% endif %}>Test Failed</option>
+                                <option value="Interview Scheduled" {% if candidate['status'] == 'Interview Scheduled' %}selected{% endif %}>Interview Scheduled</option>
+                                <option value="Interview Cleared" {% if candidate['status'] == 'Interview Cleared' %}selected{% endif %}>Interview Cleared</option>
+                                <option value="Interview Failed" {% if candidate['status'] == 'Interview Failed' %}selected{% endif %}>Interview Failed</option>
+                                <option value="Hired" {% if candidate['status'] == 'Hired' %}selected{% endif %}>Hired</option>
+                                <option value="Rejected" {% if candidate['status'] == 'Rejected' %}selected{% endif %}>Rejected</option>
+                            </select>
+                            <button type="submit">Update</button>
+                        </form>
+                    </div>
+
+                    {% if candidate['status'] == 'Test Cleared' %}
+                        <a href="{{ url_for('schedule_form', candidate_id=candidate['id']) }}" class="actions-link">
+                            Schedule Interview
+                        </a>
+                    {% endif %}
+
+                    {% if candidate['status'] == 'Interview Scheduled' and candidate['interview_id'] %}
+                        <a href="{{ url_for('feedback_form', interview_id=candidate['interview_id']) }}" class="actions-link feedback-link">
+                            Add Feedback
+                        </a>
+                    {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

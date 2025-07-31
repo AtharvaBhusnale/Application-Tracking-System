@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Apply Now</title>
+    <style>
+        body { font-family: sans-serif; margin: 2em; display: flex; justify-content: center; }
+        .container { text-align: left; border: 1px solid #ccc; padding: 2em; border-radius: 8px; width: 500px; }
+        h1 { text-align: center; }
+        label, input { display: block; width: 95%; margin-bottom: 15px; }
+        input[type="text"], input[type="email"] { padding: 8px; }
+        button { padding: 10px 15px; background-color: #007bff; color: white; border: none; cursor: pointer; width: 100%; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Apply for a Position</h1>
+        <form action="{{ url_for('upload_resume') }}" method="post" enctype="multipart/form-data">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="resume">Upload Resume (PDF):</label>
+            <input type="file" id="resume" name="resume" accept=".pdf" required>
+            
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+</body>
+</html>

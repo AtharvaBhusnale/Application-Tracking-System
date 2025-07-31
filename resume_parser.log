@@ -1,0 +1,110 @@
+2025-07-30 19:57:12,005 - INFO - Successfully parsed: G:\SATS\Atharva_Bhusnale_Resume.pdf
+2025-07-30 20:01:51,567 - INFO - Successfully parsed: G:\SATS\Atharva_Bhusnale_Resume.pdf
+2025-07-30 21:18:16,204 - INFO -  * Restarting with stat
+2025-07-30 21:18:17,817 - WARNING -  * Debugger is active!
+2025-07-30 21:18:17,846 - INFO -  * Debugger PIN: 126-169-051
+2025-07-30 21:18:17,950 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-07-30 21:18:46,929 - INFO - Successfully parsed: G:\SATS\Atharva_Bhusnale_Resume.pdf
+2025-07-30 21:18:54,665 - INFO -  * Restarting with stat
+2025-07-30 21:18:56,314 - WARNING -  * Debugger is active!
+2025-07-30 21:18:56,319 - INFO -  * Debugger PIN: 126-169-051
+2025-07-30 21:18:56,401 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-07-30 21:19:31,481 - INFO -  * Restarting with stat
+2025-07-30 21:19:33,034 - WARNING -  * Debugger is active!
+2025-07-30 21:19:33,039 - INFO -  * Debugger PIN: 126-169-051
+2025-07-30 21:19:33,149 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-07-30 22:08:27,535 - INFO -  * Restarting with stat
+2025-07-30 22:08:29,358 - WARNING -  * Debugger is active!
+2025-07-30 22:08:29,362 - INFO -  * Debugger PIN: 126-169-051
+2025-07-30 22:08:29,451 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-07-30 22:09:29,967 - INFO -  * Restarting with stat
+2025-07-30 22:09:31,587 - WARNING -  * Debugger is active!
+2025-07-30 22:09:31,591 - INFO -  * Debugger PIN: 126-169-051
+2025-07-30 22:09:31,685 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-07-30 22:09:52,985 - INFO - 127.0.0.1 - - [30/Jul/2025 22:09:52] "[32mGET / HTTP/1.1[0m" 302 -
+2025-07-30 22:09:53,044 - INFO - 127.0.0.1 - - [30/Jul/2025 22:09:53] "[35m[1mGET /candidates HTTP/1.1[0m" 500 -
+2025-07-30 22:09:53,286 - INFO - 127.0.0.1 - - [30/Jul/2025 22:09:53] "GET /candidates?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-07-30 22:09:53,288 - INFO - 127.0.0.1 - - [30/Jul/2025 22:09:53] "GET /candidates?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-07-30 22:09:53,371 - INFO - 127.0.0.1 - - [30/Jul/2025 22:09:53] "GET /candidates?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2025-07-30 22:09:53,372 - INFO - 127.0.0.1 - - [30/Jul/2025 22:09:53] "GET /candidates?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-07-30 22:11:54,696 - INFO -  * Restarting with stat
+2025-07-30 22:11:56,358 - WARNING -  * Debugger is active!
+2025-07-30 22:11:56,364 - INFO -  * Debugger PIN: 126-169-051
+2025-07-30 22:11:56,452 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-07-30 22:12:04,444 - INFO - 127.0.0.1 - - [30/Jul/2025 22:12:04] "[35m[1mGET /candidates HTTP/1.1[0m" 500 -
+2025-07-30 22:12:04,614 - INFO - 127.0.0.1 - - [30/Jul/2025 22:12:04] "GET /candidates?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-07-30 22:12:04,650 - INFO - 127.0.0.1 - - [30/Jul/2025 22:12:04] "GET /candidates?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-07-30 22:12:04,699 - INFO - 127.0.0.1 - - [30/Jul/2025 22:12:04] "GET /candidates?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2025-07-30 22:12:04,701 - INFO - 127.0.0.1 - - [30/Jul/2025 22:12:04] "GET /candidates?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-07-30 22:12:04,772 - INFO - 127.0.0.1 - - [30/Jul/2025 22:12:04] "GET /candidates?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-07-30 22:12:05,201 - INFO - 127.0.0.1 - - [30/Jul/2025 22:12:05] "[35m[1mGET /candidates HTTP/1.1[0m" 500 -
+2025-07-30 22:12:05,225 - INFO - 127.0.0.1 - - [30/Jul/2025 22:12:05] "GET /candidates?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-07-30 22:12:05,232 - INFO - 127.0.0.1 - - [30/Jul/2025 22:12:05] "GET /candidates?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-07-30 22:12:05,245 - INFO - 127.0.0.1 - - [30/Jul/2025 22:12:05] "GET /candidates?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2025-07-30 22:12:05,247 - INFO - 127.0.0.1 - - [30/Jul/2025 22:12:05] "GET /candidates?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-07-30 22:12:05,363 - INFO - 127.0.0.1 - - [30/Jul/2025 22:12:05] "GET /candidates?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-07-30 22:12:08,073 - INFO - 127.0.0.1 - - [30/Jul/2025 22:12:08] "[32mGET / HTTP/1.1[0m" 302 -
+2025-07-30 22:12:08,092 - INFO - 127.0.0.1 - - [30/Jul/2025 22:12:08] "[35m[1mGET /candidates HTTP/1.1[0m" 500 -
+2025-07-30 22:12:08,124 - INFO - 127.0.0.1 - - [30/Jul/2025 22:12:08] "GET /candidates?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-07-30 22:12:08,124 - INFO - 127.0.0.1 - - [30/Jul/2025 22:12:08] "GET /candidates?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-07-30 22:12:08,135 - INFO - 127.0.0.1 - - [30/Jul/2025 22:12:08] "GET /candidates?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2025-07-30 22:12:08,137 - INFO - 127.0.0.1 - - [30/Jul/2025 22:12:08] "GET /candidates?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-07-30 22:13:44,170 - INFO -  * Detected change in 'G:\\SATS\\database_setup.py', reloading
+2025-07-30 22:13:44,304 - INFO -  * Restarting with stat
+2025-07-30 22:13:46,067 - WARNING -  * Debugger is active!
+2025-07-30 22:13:46,072 - INFO -  * Debugger PIN: 126-169-051
+2025-07-30 22:13:46,162 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-07-30 22:15:18,137 - INFO -  * Restarting with stat
+2025-07-30 22:15:19,854 - WARNING -  * Debugger is active!
+2025-07-30 22:15:19,858 - INFO -  * Debugger PIN: 126-169-051
+2025-07-30 22:15:19,948 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-07-30 22:15:25,258 - INFO - 127.0.0.1 - - [30/Jul/2025 22:15:25] "GET /candidates HTTP/1.1" 200 -
+2025-07-30 22:15:25,465 - INFO - 127.0.0.1 - - [30/Jul/2025 22:15:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-07-30 22:15:58,769 - INFO - 127.0.0.1 - - [30/Jul/2025 22:15:58] "[31m[1mGET /upload HTTP/1.1[0m" 405 -
+2025-07-30 22:21:41,596 - INFO -  * Detected change in 'G:\\SATS\\app.py', reloading
+2025-07-30 22:21:41,786 - INFO -  * Restarting with stat
+2025-07-30 22:21:43,654 - WARNING -  * Debugger is active!
+2025-07-30 22:21:43,658 - INFO -  * Debugger PIN: 126-169-051
+2025-07-30 22:21:43,747 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-07-30 22:21:50,640 - INFO -  * Restarting with stat
+2025-07-30 22:21:52,472 - WARNING -  * Debugger is active!
+2025-07-30 22:21:52,476 - INFO -  * Debugger PIN: 126-169-051
+2025-07-30 22:21:52,564 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-07-30 22:21:54,689 - INFO - 127.0.0.1 - - [30/Jul/2025 22:21:54] "GET /candidates HTTP/1.1" 200 -
+2025-07-30 22:22:10,404 - INFO - 127.0.0.1 - - [30/Jul/2025 22:22:10] "[33mGET /apply HTTP/1.1[0m" 404 -
+2025-07-30 22:23:24,895 - INFO -  * Detected change in 'G:\\SATS\\app.py', reloading
+2025-07-30 22:23:25,109 - INFO -  * Restarting with stat
+2025-07-30 22:23:26,853 - WARNING -  * Debugger is active!
+2025-07-30 22:23:26,857 - INFO -  * Debugger PIN: 126-169-051
+2025-07-30 22:23:26,962 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-07-30 22:23:27,068 - INFO - 127.0.0.1 - - [30/Jul/2025 22:23:27] "GET /apply HTTP/1.1" 200 -
+2025-07-30 22:23:37,704 - INFO - 127.0.0.1 - - [30/Jul/2025 22:23:37] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2025-07-30 22:23:37,908 - INFO - 127.0.0.1 - - [30/Jul/2025 22:23:37] "GET /upload?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-07-30 22:23:37,909 - INFO - 127.0.0.1 - - [30/Jul/2025 22:23:37] "GET /upload?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-07-30 22:23:37,952 - INFO - 127.0.0.1 - - [30/Jul/2025 22:23:37] "GET /upload?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2025-07-30 22:23:37,954 - INFO - 127.0.0.1 - - [30/Jul/2025 22:23:37] "GET /upload?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-07-30 22:23:38,025 - INFO - 127.0.0.1 - - [30/Jul/2025 22:23:38] "GET /upload?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-07-30 22:24:34,668 - INFO -  * Detected change in 'G:\\SATS\\app.py', reloading
+2025-07-30 22:24:34,836 - INFO -  * Restarting with stat
+2025-07-30 22:24:36,635 - WARNING -  * Debugger is active!
+2025-07-30 22:24:36,639 - INFO -  * Debugger PIN: 126-169-051
+2025-07-30 22:24:36,726 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-07-30 22:24:39,287 - INFO - 127.0.0.1 - - [30/Jul/2025 22:24:39] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-07-30 22:24:39,395 - INFO - 127.0.0.1 - - [30/Jul/2025 22:24:39] "[35m[1mGET /thank_you HTTP/1.1[0m" 500 -
+2025-07-30 22:24:39,588 - INFO - 127.0.0.1 - - [30/Jul/2025 22:24:39] "GET /thank_you?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-07-30 22:24:39,589 - INFO - 127.0.0.1 - - [30/Jul/2025 22:24:39] "GET /thank_you?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-07-30 22:24:39,626 - INFO - 127.0.0.1 - - [30/Jul/2025 22:24:39] "GET /thank_you?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-07-30 22:24:39,628 - INFO - 127.0.0.1 - - [30/Jul/2025 22:24:39] "GET /thank_you?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2025-07-30 22:24:39,690 - INFO - 127.0.0.1 - - [30/Jul/2025 22:24:39] "GET /thank_you?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-07-30 22:24:46,323 - INFO - 127.0.0.1 - - [30/Jul/2025 22:24:46] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-07-30 22:24:46,349 - INFO - 127.0.0.1 - - [30/Jul/2025 22:24:46] "[35m[1mGET /thank_you HTTP/1.1[0m" 500 -
+2025-07-30 22:24:46,389 - INFO - 127.0.0.1 - - [30/Jul/2025 22:24:46] "GET /thank_you?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-07-30 22:24:46,390 - INFO - 127.0.0.1 - - [30/Jul/2025 22:24:46] "GET /thank_you?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-07-30 22:24:46,404 - INFO - 127.0.0.1 - - [30/Jul/2025 22:24:46] "GET /thank_you?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-07-30 22:24:46,416 - INFO - 127.0.0.1 - - [30/Jul/2025 22:24:46] "GET /thank_you?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2025-07-30 22:25:35,814 - INFO - 127.0.0.1 - - [30/Jul/2025 22:25:35] "GET /apply HTTP/1.1" 200 -
+2025-07-30 22:25:45,981 - INFO - 127.0.0.1 - - [30/Jul/2025 22:25:45] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-07-30 22:25:46,002 - INFO - 127.0.0.1 - - [30/Jul/2025 22:25:46] "GET /thank_you HTTP/1.1" 200 -
+2025-07-30 22:25:50,059 - INFO - 127.0.0.1 - - [30/Jul/2025 22:25:50] "GET /candidates HTTP/1.1" 200 -
+2025-07-30 22:26:01,537 - INFO - 127.0.0.1 - - [30/Jul/2025 22:26:01] "[32mPOST /update_status/1 HTTP/1.1[0m" 302 -
+2025-07-30 22:26:01,545 - INFO - 127.0.0.1 - - [30/Jul/2025 22:26:01] "GET /candidates HTTP/1.1" 200 -
