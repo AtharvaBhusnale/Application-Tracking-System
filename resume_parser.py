@@ -41,7 +41,6 @@ class ResumeParser:
     def extract_name(self, doc) -> Optional[str]:
         for ent in doc.ents:
             if ent.label_ == "PERSON":
-                # FIX: Clean the name to remove adjacent words like 'Email'
                 name = ent.text.strip()
                 return name.split('\n')[0].strip()
         return None
@@ -60,15 +59,12 @@ class ResumeParser:
         qualifications = ['MCA', 'MCS', 'ME', 'BE', 'B.E.', 'B.Tech', 'M.Tech', 'BCA', 'BSc', 'MSc']
         found_education = []
         for qual in qualifications:
-            # FIX: Made regex more flexible to handle PDF text extraction quirks
             pattern = r'\b' + re.escape(qual) + r'(?![a-zA-Z])'
             if re.search(pattern, text, re.IGNORECASE):
-                # Standardize the output (e.g., B.E. becomes BE)
                 found_education.append(qual.replace('.', ''))
         return list(set(found_education)) if found_education else ["No specific qualifications found"]
 
     def calculate_total_experience(self, text: str) -> float:
-        # FIX: Updated regex to handle optional commas in dates (e.g., "February, 2025")
         date_pattern = re.compile(
             r'(\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?,?\s+\d{4})\s*-\s*(\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?,?\s+\d{4}|\bPresent\b)',
             re.IGNORECASE
@@ -78,7 +74,6 @@ class ResumeParser:
 
         for start_date_str, end_date_str in matches:
             try:
-                # Normalize date strings by removing periods and commas
                 start_date = datetime.strptime(start_date_str.replace('.', '').replace(',', ''), '%b %Y')
                 
                 if 'Present' in end_date_str:
@@ -86,7 +81,6 @@ class ResumeParser:
                 else:
                     end_date = datetime.strptime(end_date_str.replace('.', '').replace(',', ''), '%b %Y')
 
-                # Ensure start date is before end date
                 if start_date < end_date:
                     total_months += (end_date.year - start_date.year) * 12 + (end_date.month - start_date.month)
             except ValueError:
@@ -130,8 +124,7 @@ class ResumeParser:
             "skills": self.extract_skills(resume_text)
         }
 
-# The main function remains the same
-def main():
+if __name__ == "__main__":
     if len(sys.argv) != 2:
         print("Usage: python resume_parser.py <resume_file.pdf>")
         sys.exit(1)
@@ -158,6 +151,3 @@ def main():
         logging.error(f"An unexpected error occurred while processing {input_file}: {e}")
         print(json.dumps({"error": f"An unexpected error occurred: {e}"}, indent=2))
         sys.exit(1)
-
-if __name__ == "__main__":
-    main()

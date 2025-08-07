@@ -2,20 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Apply Now</title>
-    <style>
-        body { font-family: sans-serif; margin: 2em; display: flex; justify-content: center; }
-        .container { text-align: left; border: 1px solid #ccc; padding: 2em; border-radius: 8px; width: 500px; }
-        h1 { text-align: center; }
-        label, input { display: block; width: 95%; margin-bottom: 15px; }
-        input[type="text"], input[type="email"] { padding: 8px; }
-        button { padding: 10px 15px; background-color: #007bff; color: white; border: none; cursor: pointer; width: 100%; }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Now - ATS</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    <div class="container">
+
+    <nav class="navbar">
+        <a href="{{ url_for('apply') }}">Application Tracking System</a>
+    </nav>
+    
+    <div class="container" style="max-width: 600px;">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert-{{ category }}" style="padding: 1em; margin-bottom: 1em; border-radius: 5px; background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb;">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
         <h1>Apply for a Position</h1>
-        <form action="{{ url_for('upload_resume') }}" method="post" enctype="multipart/form-data">
+        <p>Please fill out your details and upload your resume.</p>
+        <form id="application-form" action="{{ url_for('upload_resume') }}" method="post" enctype="multipart/form-data">
             <label for="name">Full Name:</label>
             <input type="text" id="name" name="name" required>
 
@@ -25,8 +35,40 @@
             <label for="resume">Upload Resume (PDF):</label>
             <input type="file" id="resume" name="resume" accept=".pdf" required>
             
-            <button type="submit">Submit Application</button>
+            <button type="submit" class="btn btn-primary">Submit Application</button>
         </form>
     </div>
+
+    <script>
+        const applicationForm = document.getElementById('application-form');
+        const nameInput = document.getElementById('name');
+        const emailInput = document.getElementById('email');
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedName = localStorage.getItem('candidateName');
+            const savedEmail = localStorage.getItem('candidateEmail');
+
+            if (savedName) {
+                nameInput.value = savedName;
+            }
+            if (savedEmail) {
+                emailInput.value = savedEmail;
+            }
+        });
+
+        nameInput.addEventListener('input', () => {
+            localStorage.setItem('candidateName', nameInput.value);
+        });
+
+        emailInput.addEventListener('input', () => {
+            localStorage.setItem('candidateEmail', emailInput.value);
+        });
+
+        applicationForm.addEventListener('submit', () => {
+            localStorage.removeItem('candidateName');
+            localStorage.removeItem('candidateEmail');
+        });
+    </script>
+
 </body>
 </html>

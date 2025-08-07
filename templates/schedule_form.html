@@ -2,27 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Schedule Interview</title>
-    <style>
-        body { font-family: sans-serif; margin: 2em; }
-        form { max-width: 400px; }
-        label, input { display: block; margin-bottom: 10px; width: 100%; }
-        button { padding: 10px 15px; background-color: #007bff; color: white; border: none; cursor: pointer; }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Interview - ATS</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    <h1>Schedule Interview for: {{ candidate['name'] }}</h1>
-    <form action="{{ url_for('schedule_interview', candidate_id=candidate_id) }}" method="post">
-        <label for="interviewer">Interviewer Name:</label>
-        <input type="text" id="interviewer" name="interviewer" required>
-        
-        <label for="date">Date:</label>
-        <input type="date" id="date" name="date" required>
-        
-        <label for="time">Time:</label>
-        <input type="time" id="time" name="time" required>
-        
-        <button type="submit">Schedule</button>
-    </form>
+
+    <nav class="navbar">
+        <a href="{{ url_for('show_candidates') }}">HR Dashboard</a>
+    </nav>
+
+    <div class="container" style="max-width: 600px;">
+        <h1>Schedule Interview for: {{ candidate['name'] }}</h1>
+        <form action="{{ url_for('schedule_interview', candidate_id=candidate_id) }}" method="post">
+            <label for="interviewer">Interviewer Name:</label>
+            <input type="text" id="interviewer" name="interviewer" required>
+            
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+            
+            <button type="submit" class="btn btn-primary">Schedule</button>
+        </form>
+    </div>
 </body>
 </html>
